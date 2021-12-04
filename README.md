@@ -20,4 +20,12 @@ Die vorhandenen Blöcke lassen sich in acht Kategorien gliedern, aus denen man p
 
 <img width="222" alt="Bildschirmfoto 2021-12-04 um 11 15 16" src="https://user-images.githubusercontent.com/88386040/144705791-24b77671-7245-4d26-8e3c-4eecceb82a3a.png">
 
+## Umsetzung der Idee - Konzept
+
+Spielfigur: Dinosaurier 
+
+Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechhten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
+
+
+
 
