@@ -24,6 +24,15 @@ Die vorhandenen Blöcke lassen sich in acht Kategorien gliedern, aus denen man p
 
 ## Umsetzung der Idee - Konzept
 
+### Variablen 
+
+Damit unser Spiel funktionieren aknn wie es soll, haben wir zwei Variablen erstellt.
+
+Die Variable "Leben" wird zu Beginn des Spieles auf drei gesetzt und spiegelt die Herzen wider, die der Dino verlieren kann. Sobald diese null erreicht, ist das Spiel verloren.
+Die zweite Variable "Timer" spiegelt die abgelaufene Zeit wider. Wenn dieser null erreicht, gilt das Spiel als gewonnen.
+
+Beide Funktionen werden bei der Erklärung der Stage noch genauer ins Detail genommen.
+
 ### Spielfigur: Dinosaurier 
 
 Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechhten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
