@@ -24,7 +24,7 @@ Die vorhandenen Blöcke lassen sich in acht Kategorien gliedern, aus denen man p
 
 ## Umsetzung der Idee - Konzept
 
-Spielfigur: Dinosaurier 
+### Spielfigur: Dinosaurier 
 
 Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechhten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
 
@@ -45,6 +45,21 @@ Der Dinosaurier sollte bevor das Spiel beginnt nicht zu sehen sein. Deshalb habe
 Wenn die Spielfigur all ihre leben verliert, ändert sich das Kostüm des Dinos zum Kostüm "Dino tot". Dazu haben wir die Blöcke "When I receive Game Over", show und "switch to costume Dino tot" kombiniert und einen Block eingebaut, der diesen auf die Höhe y=-50 setzt. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144718584-2c729d1f-6454-4a40-b411-bc2433229086.png)
+
+### Gegner: Meteoriten 
+
+Die Gegner des Spieles sind die vom Himmel fallenden Meteoriten, welche drohen den Dino zu erschlagen. 
+
+Als erstes haben wir dazu einen "Grundmeteoriten" erstellt, dessen Größe wir zu Beginn auf 20% reduziert haben. Dieser fällt nach einer drei sekündigen Wartezeit an die Koordinate (0/170) gesetzt und fällt durch die Blockkombination aus in einem "Forever" stehenden "point in direction 180" und "move 5 steps" in Richtung Erdboden.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144719384-27cc1d43-3a29-47ac-886b-7da69e90dec0.png)
+
+Damit nicht nur ein, sondern mehrere Meteoriten entstehen, wird der "Grundmeteorit" geklont. Dazu werden, nachdem "Level Beginn" gebroadcastet wurde, die Meteoriten geklont und zu einer zufälligen Zeit, an eine zufällige x-Koordinate gesetzt und beginnen auf den Dino zu fallen, bis die Leben auf "0" gesetzt werden. Dazu wird in einer "repeat until Leben=0-Klammer", welche dafür verantwortlich ist, dass das Verfahren mit dem Spiel endet, zu Beginn durch den Block "wait'pick random 1 to 2' secs" die zufällige Zeit, in der der Klon entseht ("create a clone of myself"), verursacht, woraufhin durch den Block "go to x:'pick random -200 to 200' y:200" die zufällige Fallkoordinate gewählt wird. Damit die Meteoriten, sollten sie in der Luft hängen bleiben, nicht mehr sichtbar sind und vom Spiel ablenken, verschwinden sie durch die Blockkombination "wait 2 secs" und "hide" nach zwei Sekunden, also dann, wenn sie im Normalfall bereits den ganzen Bildschirm gefallen sind. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144719731-ce8b8de0-8158-4165-9bba-3c0efa20d364.png)
+
+
+
 
 
 
