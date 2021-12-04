@@ -66,6 +66,13 @@ Damit die Meteoriten beim Berühren des Bodens des Bodens, sowie bei und vor Spi
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144720169-f0a5c7ab-9484-428b-b9e8-28bb9ba43270.png)
 
+###Boden
+
+Beim Boden handelt es sich um einen von uns gemalten Spite, bei dem wir jediglich programmieren mussten, dass er auf die Koordinate (0/-150) gesetzt wurde, und, dass er durch die Blockkombinationen "when I receive #Level Beginn'", "show" und "when I receive 'WIN'", "hide" zum richtigen Zeitpunkt ein- oder ausgeblendet wird. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144720386-80fb0851-0aa1-4b3a-a664-9f893b9374ed.png)
+
+
 
 
 
