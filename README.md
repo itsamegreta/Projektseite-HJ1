@@ -26,10 +26,12 @@ Die vorhandenen Blöcke lassen sich in acht Kategorien gliedern, aus denen man p
 
 ### Variablen 
 
-Damit unser Spiel funktionieren aknn wie es soll, haben wir zwei Variablen erstellt.
+Damit unser Spiel funktionieren kann wie es soll, haben wir zwei Variablen erstellt.
 
 Die Variable "Leben" wird zu Beginn des Spieles auf drei gesetzt und spiegelt die Herzen wider, die der Dino verlieren kann. Sobald diese null erreicht, ist das Spiel verloren.
 Die zweite Variable "Timer" spiegelt die abgelaufene Zeit wider. Wenn dieser null erreicht, gilt das Spiel als gewonnen.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144721348-a6d363e3-b36a-40c4-8055-68b58bdf63a2.png)
 
 Beide Funktionen werden bei der Erklärung der Stage noch genauer ins Detail genommen.
 
