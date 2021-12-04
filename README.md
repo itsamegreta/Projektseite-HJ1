@@ -58,6 +58,18 @@ Damit nicht nur ein, sondern mehrere Meteoriten entstehen, wird der "Grundmeteor
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144719731-ce8b8de0-8158-4165-9bba-3c0efa20d364.png)
 
+Da die Meteoriten dem Dino sobald sie ihn treffen auch Leben abziehen sollen, haben wir eine Blockkombination erstellt, in der ab "Level Beginn" für immer gilt, dass die Meteoriten, sobald sie den Dino berühren, die Variable "Leben" um minus eins verändern. Dazu dienen die Blöcke "wait until touching 'Dino'", "change 'Leben' by -1" und "wait 2 secs" in einer "forever-Klammer". 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144719882-a5464817-23ee-497f-8b17-84d887f088e4.png)
+
+Damit die Meteoriten beim Berühren des Bodens des Bodens, sowie bei und vor Spielbeginn, Gewinn oder Game Over nicht mehr fallen bzw. angezeigt werden, haben wir drei verschiedene Blöcke kreiert, welche jeweils ein "when I receive" mit dem jeweils gebroadcasteten Zustand kombiniert, sowie einen "when Fahne clicked" Block, auf die jeweils ein "hide"-Block folgt.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144720169-f0a5c7ab-9484-428b-b9e8-28bb9ba43270.png)
+
+
+
+
+
 
 
 
