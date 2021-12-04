@@ -34,9 +34,20 @@ Dazu wird der Control-Block "When I receive Level Beginn" in Kombination mit dem
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144717383-a833b359-7c30-458a-8df5-1044d8cd9e01.png)
 
-Damit der Dino überhaupt angezeigt werden konnte und auf seiner Startposition auftaucht, gab es zudem volgenden Block:
+Damit der Dino überhaupt angezeigt werden konnte und auf seiner Startposition auftaucht, haben wir zudem diesen Block erstellt:
 
-![grafik](https://user-images.githubusercontent.com/88386040/144717233-8e20dc96-6778-4d66-ae5d-61e8d37e9e20.png)
+![grafik](https://user-images.githubusercontent.com/88386040/144717233-8e20dc96-6778-4d66-ae5d-61e8d37e9e20.png
+
+Der Dinosaurier sollte bevor das Spiel beginnt nicht zu sehen sein. Deshalb haben wir einen Block "when Fahne clicked" mit einem hide kombiniert. Das gleiche wollten wir wenn der Spieler gewinnt, also haben wir einen "When I receive WIN-Block" mit einem "hide" kombiniert. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144718275-519f9b1f-d0c7-4d9c-9498-bb847242986a.png)
+
+Wenn die Spielfigur all ihre leben verliert, ändert sich das Kostüm des Dinos zum Kostüm "Dino tot". Dazu haben wir die Blöcke "When I receive Game Over", show und "switch to costume Dino tot" kombiniert und einen Block eingebaut, der diesen auf die Höhe y=-50 setzt. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144718584-2c729d1f-6454-4a40-b411-bc2433229086.png)
+
+
+
 
 
 
