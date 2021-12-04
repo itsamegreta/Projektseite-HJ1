@@ -35,6 +35,22 @@ Die zweite Variable "Timer" spiegelt die abgelaufene Zeit wider. Wenn dieser nul
 
 Beide Funktionen werden bei der Erklärung der Stage noch genauer ins Detail genommen.
 
+### "Broadcast"
+
+Wir haben für das Spiel vier zu broadcastende Befehle erstellt:
+
+1. "Spielstart", der gebroadcastet wird, sobald die grüne Flagge gedrückt wird, dessen Blockkombination sich auf der Stage befindet.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144721578-6b231b7b-fa04-459c-9e66-9b59cfdd4a31.png)
+
+2. "Level Beginn", der gebroadcated wird, sobald der Startbutton gedrückt wird und deshalb auch dort zu veroten ist.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144721644-dc94db33-4efe-4567-ac4c-bec91d493e0c.png)
+
+3. "Game Over", das gebroadcasted wird wenn der Spieler alle Leben verliert und bei den Herzen zu verorten ist.
+
+4. "WIN", das gebroadcasted wird sobald der Timer von 45 Sekunden abgelaufen ist. Es befindet sich bei den Blöcken des Spites "WIN".
+
 ### Spielfigur: Dinosaurier 
 
 Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechhten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
