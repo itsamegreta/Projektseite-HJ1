@@ -111,7 +111,7 @@ Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können
 
 ### Leben 
 
-Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getrffen weren.
+Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gese
 
 
 
