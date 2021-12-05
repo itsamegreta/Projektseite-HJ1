@@ -30,6 +30,8 @@
 
 [13.  Stage/Hintergrund](#13)
 
+[14.  Anleitung](#14)
+
 
 ## <a name="1"></a> Idee
 
@@ -203,6 +205,9 @@ Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine
 ![grafik](https://user-images.githubusercontent.com/88386040/144747507-0fb799dc-6d41-4aca-8c90-2ea0999cfe66.png)
 
 
+### <a name="14"></a> Anleitung
+
+Um zu Beginn des Spieles die Aufgabe des Spielers zu erklären, spricht der Startbutton und erklärt alles. Dazu wird der Befehl "when I receive 'Spielstart'" mit dem Befehl "say 'Dodge the meteorites! Use your arrow keys to run and try to survive the apocalypse'" kombiniert und verschwindet wie der Startbutton, wenn man ihn anklickt und das Spiel beginnt.
 
 
 
