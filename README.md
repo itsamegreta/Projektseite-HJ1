@@ -12,9 +12,9 @@ Dazu haben wir zu Beginn kleinere Projekte ausprobiert, in denen wir die Funktio
 
 ## Programm
 
-Nach unserer Recherche und einer Absprache mit Herrn Buhl, haben wir uns für für das Programm Snap! entschieden. Da wir weniger Tutorials oder Erklärung als gedacht gefunden haben, haben wir uns auch mit diesen für die Programmiersprache Scratch beschäftigt, da die beiden Sprachen sich stark ähneln. 
+Nach unserer Recherche und einer Absprache mit Herrn Buhl, haben wir uns für das Programm Snap! entschieden. Da wir weniger Tutorials oder Erklärung als gedacht gefunden haben, haben wir uns auch mit diesen für die Programmiersprache Scratch beschäftigt, da die beiden Sprachen sich stark ähneln. 
 
-Wir haben uns für Snap! entschieden, da es eine visuelle Blockprogrammiersprache ist, die besonders für Beginner geeignet ist, da man die einzelnen Befehle aus bereits vorandenen Blöcken zusammensetzten kann, aber wenn nötig, auch eigene Blöcke erstellen kann. 
+Wir haben uns für Snap! entschieden, da es eine visuelle Blockprogrammiersprache ist, die besonders für Beginner geeignet ist, da man die einzelnen Befehle aus bereits vorhandenen Blöcken zusammensetzten kann, aber wenn nötig, auch eigene Blöcke erstellen kann. 
 
 <img width="1440" alt="Bildschirmfoto 2021-12-04 um 11 16 44" src="https://user-images.githubusercontent.com/88386040/144705832-694fe412-c20e-4159-b9bd-1a1c5fe8ba08.png">
 
@@ -43,19 +43,19 @@ Wir haben für das Spiel vier zu broadcastende Befehle erstellt:
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144721578-6b231b7b-fa04-459c-9e66-9b59cfdd4a31.png)
 
-2. "Level Beginn", der gebroadcated wird, sobald der Startbutton gedrückt wird und deshalb auch dort zu veroten ist.
+2. "Level Beginn", der gebroadcated wird, sobald der Startbutton gedrückt wird und deshalb auch dort zu verorten ist.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144721644-dc94db33-4efe-4567-ac4c-bec91d493e0c.png)
 
-3. "Game Over", das gebroadcasted wird wenn der Spieler alle Leben verliert und bei den Herzen zu verorten ist.
+3. "Game Over", das gebroadcasted wird, wenn der Spieler alle Leben verliert und bei den Herzen zu verorten ist.
 
-4. "WIN", das gebroadcasted wird sobald der Timer von 45 Sekunden abgelaufen ist. Es befindet sich bei den Blöcken des Spites "WIN".
+4. "WIN", das gebroadcasted wird, sobald der Timer von 45 Sekunden abgelaufen ist. Es befindet sich bei den Blöcken des Spites "WIN".
 
 ### Spielfigur: Dinosaurier 
 
-Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechhten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
+Als Spielfigur des Spieles dient ein blauer Dinosaurier, den der Spieler mit der linken und rechten Pfeiltaste steuern kann. Ziel dabei ist es den vom Himmel fallenden Meteoriten auszuweichen. Dabei entspricht die Richtung der Pfeiltaste der Bewegungsrichtung. 
 
-Dazu wird der Control-Block "When I receive Level Beginn" in Kombination mit dem Block "show" genutzt, damit folgende Blöcke erst nach drücken des Start-Buttons funktionieren. Darunter haben wir einen "forever" Block gesetzt, in dem wir zwei verschiedene "if x-Key pressed-Blöcke" mit je einem "switch to custume x" und einem "change x by x-Block" kombiniert haben. Beim Drücken der rechten Pfeiltaste wird das normale Kostüm "Dino" genutzt, in dem der Dino nach rechts guckt, wird die linke Pfeiltaste gedrückt, muss das Kostüm "dino 2" genutzt werden, da der Dino sonst rückwärts laufen würde. Er läuft daraufhin 5/-5 Schritte. Dazu kommt ein Block, der es ermöglicht, dass der Dino, sobald er den rechten Rand berührt, wieder an seine Startkoordinate zurück gesetzt wird (-190/-61)
+Dazu wird der Control-Block "When I receive Level Beginn" in Kombination mit dem Block "show" genutzt, damit folgende Blöcke erst nach drücken des Start-Buttons funktionieren. Darunter haben wir einen "forever" Block gesetzt, in dem wir zwei verschiedene "if x-Key pressed-Blöcke" mit je einem "switch to custume x" und einem "change x by x-Block" kombiniert haben. Beim Drücken der rechten Pfeiltaste wird das normale Kostüm "Dino" genutzt, in dem der Dino nach rechts guckt, wird die linke Pfeiltaste gedrückt, muss das Kostüm "dino 2" genutzt werden, da der Dino sonst rückwärtslaufen würde. Er läuft daraufhin 5/-5 Schritte. Dazu kommt ein Block, der es ermöglicht, dass der Dino, sobald er den rechten Rand berührt, wieder an seine Startkoordinate zurückgesetzt wird (-190/-61)
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144717177-18a2a338-ef77-47bb-bf5a-46cf2eb0c0d1.png)
 
@@ -65,11 +65,11 @@ Damit der Dino überhaupt angezeigt werden konnte und auf seiner Startposition a
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144717233-8e20dc96-6778-4d66-ae5d-61e8d37e9e20.png
 
-Der Dinosaurier sollte bevor das Spiel beginnt nicht zu sehen sein. Deshalb haben wir einen Block "when Fahne clicked" mit einem hide kombiniert. Das gleiche wollten wir wenn der Spieler gewinnt, also haben wir einen "When I receive WIN-Block" mit einem "hide" kombiniert. 
+Der Dinosaurier sollte bevor das Spiel beginnt nicht zu sehen sein. Deshalb haben wir einen Block "when Fahne clicked" mit einem hide kombiniert. Das gleiche wollten wir, wenn der Spieler gewinnt, also haben wir einen "When I receive WIN-Block" mit einem "hide" kombiniert. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144718275-519f9b1f-d0c7-4d9c-9498-bb847242986a.png)
 
-Wenn die Spielfigur all ihre leben verliert, ändert sich das Kostüm des Dinos zum Kostüm "Dino tot". Dazu haben wir die Blöcke "When I receive Game Over", show und "switch to costume Dino tot" kombiniert und einen Block eingebaut, der diesen auf die Höhe y=-50 setzt. 
+Wenn die Spielfigur all ihre Leben verliert, ändert sich das Kostüm des Dinos zum Kostüm "Dino tot". Dazu haben wir die Blöcke "When I receive Game Over", show und "switch to costume Dino tot" kombiniert und einen Block eingebaut, der diesen auf die Höhe y=-50 setzt. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144718584-2c729d1f-6454-4a40-b411-bc2433229086.png)
 
@@ -81,7 +81,7 @@ Als erstes haben wir dazu einen "Grundmeteoriten" erstellt, dessen Größe wir z
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144719384-27cc1d43-3a29-47ac-886b-7da69e90dec0.png)
 
-Damit nicht nur ein, sondern mehrere Meteoriten entstehen, wird der "Grundmeteorit" geklont. Dazu werden, nachdem "Level Beginn" gebroadcastet wurde, die Meteoriten geklont und zu einer zufälligen Zeit, an eine zufällige x-Koordinate gesetzt und beginnen auf den Dino zu fallen, bis die Leben auf "0" gesetzt werden. Dazu wird in einer "repeat until Leben=0-Klammer", welche dafür verantwortlich ist, dass das Verfahren mit dem Spiel endet, zu Beginn durch den Block "wait'pick random 1 to 2' secs" die zufällige Zeit, in der der Klon entseht ("create a clone of myself"), verursacht, woraufhin durch den Block "go to x:'pick random -200 to 200' y:200" die zufällige Fallkoordinate gewählt wird. Damit die Meteoriten, sollten sie in der Luft hängen bleiben, nicht mehr sichtbar sind und vom Spiel ablenken, verschwinden sie durch die Blockkombination "wait 2 secs" und "hide" nach zwei Sekunden, also dann, wenn sie im Normalfall bereits den ganzen Bildschirm gefallen sind. 
+Damit nicht nur ein, sondern mehrere Meteoriten entstehen, wird der "Grundmeteorit" geklont. Dazu werden, nachdem "Level Beginn" gebroadcastet wurde, die Meteoriten geklont und zu einer zufälligen Zeit, an eine zufällige x-Koordinate gesetzt und beginnen auf den Dino zu fallen, bis die Leben auf "0" gesetzt werden. Dazu wird in einer "repeat until Leben=0-Klammer", welche dafür verantwortlich ist, dass das Verfahren mit dem Spiel endet, zu Beginn durch den Block "wait'pick random 1 to 2' secs" die zufällige Zeit, in der der Klon entsteht ("create a clone of myself"), verursacht, woraufhin durch den Block "go to x:'pick random -200 to 200' y:200" die zufällige Fallkoordinate gewählt wird. Damit die Meteoriten, sollten sie in der Luft hängen bleiben, nicht mehr sichtbar sind und vom Spiel ablenken, verschwinden sie durch die Blockkombination "wait 2 secs" und "hide" nach zwei Sekunden, also dann, wenn sie im Normalfall bereits den ganzen Bildschirm gefallen sind. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144719731-ce8b8de0-8158-4165-9bba-3c0efa20d364.png)
 
@@ -95,27 +95,27 @@ Damit die Meteoriten beim Berühren des Bodens des Bodens, sowie bei und vor Spi
 
 ### Boden
 
-Beim Boden handelt es sich um einen von uns gemalten Spite, bei dem wir jediglich programmieren mussten, dass er auf die Koordinate (0/-150) gesetzt wurde, und, dass er durch die Blockkombinationen "when I receive 'Level Beginn'", "show" und "when I receive 'WIN'", "hide" zum richtigen Zeitpunkt ein- oder ausgeblendet wird. 
+Beim Boden handelt es sich um einen von uns gemalten Sprite, bei dem wir lediglich programmieren mussten, dass er auf die Koordinate (0/-150) gesetzt wurde, und, dass er durch die Blockkombinationen "when I receive 'Level Beginn'", "show" und "when I receive 'WIN'", "hide" zum richtigen Zeitpunkt ein- oder ausgeblendet wird. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144720386-80fb0851-0aa1-4b3a-a664-9f893b9374ed.png)
 
 ### Startbutton
 
-Der Startbutton soll das gesammte Spiel starten, sobald er angegeklickt wird. Deshalb soll er angezeigt werden, sobald die grüne Flagge gedrückt wird, weshalb ein "when Flagge clicked" Block in Verbindung mit einem "show" Block verwendet wird. Die Größe haben wir durch den Block "set size to 55%" angepasst und ihn durch den Block "go to x:0 y:0" in die Mitte des Bildschirms gesetzt. 
+Der Startbutton soll das gesamte Spiel starten, sobald er angeklickt wird. Deshalb soll er angezeigt werden, sobald die grüne Flagge gedrückt wird, weshalb ein "when Flagge clicked" Block in Verbindung mit einem "show" Block verwendet wird. Die Größe haben wir durch den Block "set size to 55%" angepasst und ihn durch den Block "go to x:0 y:0" in die Mitte des Bildschirms gesetzt. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144744470-cd893d51-28eb-46a1-8f04-2cfd792e0e28.png)
 
-Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können und der Button funktioniert, muss "Level Beginn" gebroadcasted werden sobald er angeglickt wird und. Dazu haben wir die Blöcke "when I am 'clicked'" und "broadcast 'Level Beginn'" kombiniert. Damit der Startbutton gedrückt wurde und das Spiel beginnt, sollte der Button zudem nicht mehr zu sehen sein, weshalb wir einen "hide"-Block eingebaut haben.
+Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können und der Button funktioniert, muss "Level Beginn" gebroadcastet werden sobald er angegeklickt wird. Dazu haben wir die Blöcke "when I am 'clicked'" und "broadcast 'Level Beginn'" kombiniert. Damit der Startbutton gedrückt wurde und das Spiel beginnt, sollte der Button zudem nicht mehr zu sehen sein, weshalb wir einen "hide"-Block eingebaut haben.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144744649-8e86f3ef-60e7-462e-b6f6-0d882beee009.png)
 
 ### Leben 
 
-Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gesesetzt, indem wir den Block "when I receive 'Level Beginn'" mit dem Variablen-Block "set 'Leben' to 3" kombiniert haben. Um die Lage der Leben auf dem Bildschirm festzulegen, haben wir die Anzeige durch den Block "set size to 30%" auf eine geeignete Fröße gesetzt und durch "go to x:-170 y:150" an eine geeignete Stelle des Bildschirms positioniert. 
+Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gesetzt, indem wir den Block "when I receive 'Level Beginn'" mit dem Variablen-Block "set 'Leben' to 3" kombiniert haben. Um die Lage der Leben auf dem Bildschirm festzulegen, haben wir die Anzeige durch den Block "set size to 30%" auf eine geeignete Größe gesetzt und durch "go to x:-170 y:150" an eine geeignete Stelle des Bildschirms positioniert. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144745462-ffcbc09f-6e0c-4564-9399-ca739f0f90fa.png)
 
-Damit auch wirklich Leben abgezogen werden, befindet sich beim Spite "Meteorit" ein Block, durch den der Variable "Leben" ein Herz abgezogen wird, sobald der Dino von einem Meteoriten getroffen wird. Dazu benötigten wir die Blöcke "wait until 'touching Dino'" und "change 'Leben' by -1"
+Damit auch wirklich Leben abgezogen werden, befindet sich beim Sprite "Meteorit" ein Block, durch den der Variable "Leben" ein Herz abgezogen wird, sobald der Dino von einem Meteoriten getroffen wird. Dazu benötigten wir die Blöcke "wait until 'touching Dino'" und "change 'Leben' by -1"
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144745586-9219207e-20d9-46be-83e6-3d9e0e16d730.png)
 
@@ -123,7 +123,7 @@ Damit wir eine funktionierende Lebensanzeige haben, mussten wir zuerst vier vers
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144745787-acafd8b9-e689-41de-9119-eae826f3808b.png)
 
-Damit die Anzeige bzw. die Kostüme auch wirklich mit der Variable geändert werden, haben wir in einer "forever"-Klammer jeweils ein "if 'Leben=x'" mit einem "switch to costume x" kombiniert. In dem Moment, in dem die Variable "Leben" auf null gesetzt wird, wird zum Einen das Kostüm geändert und zum Anderen "Game Over" gebroadcasted, da das Spiel in dem Moment als verloren gilt. 
+Damit die Anzeige bzw. die Kostüme auch wirklich mit der Variablen geändert werden, haben wir in einer "forever"-Klammer jeweils ein "if 'Leben=x'" mit einem "switch to costume x" kombiniert. In dem Moment, in dem die Variable "Leben" auf null gesetzt wird, wird zum Einen das Kostüm geändert und zum Anderen "Game Over" gebroadcastet, da das Spiel in dem Moment als verloren gilt. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144746019-f089ae7d-07c6-4f38-abb3-a9386e4ad837.png)
 
@@ -133,7 +133,7 @@ Die Anzeige soll auch vor Spielbeginn und nach einem Gewinn versteckt werden, we
 
 ### Game Over 
 
-Damit das "Game Over" erst angezeigt wird, sobald der Dino alle Leben verloren hat, haben wir ein "hide" folgend auf ein "when Flagge clicked" und auf ein "when I receive 'Spielstart'" eingebaut. Damit sie dann jedoch eingebaut wird, haben wir den folgenden Block gebaut, der ab Anfang des Spielstarts gilt. Diseser gilt durch einen "if 'Leben=0'" wirklich nur in dem Moment, in dem alle Leben verloren wurden. Nach 0,1 Sekunden Wartezeit wird das Costume "try" für try again erst auf die richtige Größe und Koordinate gesetzt und dann angezeigt. Daraufhin werden durch den Block "stop all" alle anderen Befehle gestoppt, damit auch keine Meteoriten mehr fallen. 
+Damit das "Game Over" erst angezeigt wird, sobald der Dino alle Leben verloren hat, haben wir ein "hide" folgend auf ein "when Flagge clicked" und auf ein "when I receive 'Spielstart'" eingebaut. Damit sie dann jedoch eingebaut wird, haben wir den folgenden Block gebaut, der ab Anfang des Spielstarts gilt. Dieser gilt durch einen "if 'Leben=0'" wirklich nur in dem Moment, in dem alle Leben verloren wurden. Nach 0,1 Sekunden Wartezeit wird das Costume "try" für try again erst auf die richtige Größe und Koordinate gesetzt und dann angezeigt. Daraufhin werden durch den Block "stop all" alle anderen Befehle gestoppt, damit auch keine Meteoriten mehr fallen. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144746905-a73ea843-36a6-4af3-a975-b6eeaf121fba.png)
 
@@ -153,7 +153,7 @@ Genau wie beim "Game Over" kann es angeklickt werden um das Spiel erneut zu star
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747659-208fa8b0-7b39-4797-b5e3-79dc066f9eb1.png)
 
-Sobald "WIN" gebroadcasted wird, wird auch der Boden versteckt, weshalb sich folgender "Gewinnbildschirm" ergibt:
+Sobald "WIN" gebroadcastet wird, wird auch der Boden versteckt, weshalb sich folgender "Gewinnbildschirm" ergibt:
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747304-85dbac96-032a-4682-ba95-25201fba795d.png)
 
@@ -163,13 +163,13 @@ Um einen passenden Hintergrund zu gestalten, haben wir uns auf einen graublauen 
 
 ![93A11BA2-0D73-4B0D-9E04-E2193098416B](https://user-images.githubusercontent.com/88386040/144747930-3f49f6da-5a2d-45b7-ae4d-b7077655ce28.png)
 
-Auf der Stage befinden sich außerdem zwei Befehle: Dass beim Klicken der grünen Flagge "Spielstart" gebroadcasted wird und, dass sobald es gebroadcasted wird die Variable "Leben" auf 3 gesetzt wird.
+Auf der Stage befinden sich außerdem zwei Befehle: Dass beim Klicken der grünen Flagge "Spielstart" gebroadcastet wird und, dass sobald es gebroadcastet wird die Variable "Leben" auf 3 gesetzt wird.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144748029-e7a7ae30-69d3-4461-a248-ba9080cb10da.png)
 
 ### Timer
 
-Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine Begrenzung der Spieldauer auf 45 Sekunden. Um diese zu erstellen haben wir wie bereits erklärt eine neue Variable "Timer" erstellt, welcher beginnt abzulaufen, sobald der Startbutton gedrückt wird. Die Variable, die zu Beginn auf 45 steht, wird durch die Blöcke "wait 1 secs" und "change 'Timer' by -1" sekundenweise geringer. Sobald der Timer abgelaufen ist, also die Variable auf 0 gesetzt wird, wird "WIN" gebroadasted.
+Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine Begrenzung der Spieldauer auf 45 Sekunden. Um diese zu erstellen haben wir wie bereits erklärt eine neue Variable "Timer" erstellt, welcher beginnt abzulaufen, sobald der Startbutton gedrückt wird. Die Variable, die zu Beginn auf 45 steht, wird durch die Blöcke "wait 1 secs" und "change 'Timer' by -1" sekundenweise geringer. Sobald der Timer abgelaufen ist, also die Variable auf 0 gesetzt wird, wird "WIN" gebroadastet.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747507-0fb799dc-6d41-4aca-8c90-2ea0999cfe66.png)
 
