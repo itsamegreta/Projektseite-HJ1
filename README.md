@@ -159,6 +159,17 @@ Sobald "WIN" gebroadcasted wird, wird auch der Boden versteckt, weshalb sich fol
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747304-85dbac96-032a-4682-ba95-25201fba795d.png)
 
+### Stage/Hintergrund
+
+Um einen passenden Hintergrund zu gestalten, haben wir uns auf einen graublauen Wolkenhimmel geeinigt. Diesen haben wir als png hochgeladen. 
+
+![93A11BA2-0D73-4B0D-9E04-E2193098416B](https://user-images.githubusercontent.com/88386040/144747930-3f49f6da-5a2d-45b7-ae4d-b7077655ce28.png)
+
+Auf der Stage befinden sich außerdem zwei Befehle: Dass beim Klicken der grünen Flagge "Spielstart" gebroadcasted wird und, dass sobald es gebroadcasted wird die Variable "Leben" auf 3 gesetzt wird.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144748029-e7a7ae30-69d3-4461-a248-ba9080cb10da.png)
+
+
 
 
 
