@@ -145,9 +145,7 @@ Zudem haben wir einen weiteren Block erstellt, der es ermöglichen sollte durch 
 
 ### Win 
 
-Das Spiel gewinnen kann man indem man 45 Sekunden des Spieles überlebt, ohne von Meteoriten getroffen zu werden. Dazu mussten wir zuerst einen Timer erstellen, der durch die Variable "Timer" entsteht. Diesem wird durch die Blöcke "wait 1 secs" und "change 'Timer' by -1" sekundenweise geringer. Sobald der Timer abgelaufen ist, also die Variable auf 0 gesetzt wird, wird "WIN" gebroadasted.
-
-![grafik](https://user-images.githubusercontent.com/88386040/144747507-0fb799dc-6d41-4aca-8c90-2ea0999cfe66.png)
+Das Spiel gewinnen kann man indem man 45 Sekunden des Spieles überlebt, ohne von Meteoriten getroffen zu werden. Der ablaufende Timer wird später im Blog genauer erläutert.
 
 Wenn das Spiel beginnt wird das Costume mittig positioniert, die Größe agepasst und es wird versteckt. Auch wenn die grüne Flagge gedrückt wird ist es versteckt, denn es soll erst angezeigt werden, wenn "WIN" received wird und der Dino noch Leben hat. 
 
@@ -168,6 +166,12 @@ Um einen passenden Hintergrund zu gestalten, haben wir uns auf einen graublauen 
 Auf der Stage befinden sich außerdem zwei Befehle: Dass beim Klicken der grünen Flagge "Spielstart" gebroadcasted wird und, dass sobald es gebroadcasted wird die Variable "Leben" auf 3 gesetzt wird.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144748029-e7a7ae30-69d3-4461-a248-ba9080cb10da.png)
+
+### Timer
+
+Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine Begrenzung der Spieldauer auf 45 Sekunden. Um diese zu erstellen haben wir wie bereits erklärt eine neue Variable "Timer" erstellt, welcher beginnt abzulaufen, sobald der Startbutton gedrückt wird. Die Variable, die zu Beginn auf 45 steht, wird durch die Blöcke "wait 1 secs" und "change 'Timer' by -1" sekundenweise geringer. Sobald der Timer abgelaufen ist, also die Variable auf 0 gesetzt wird, wird "WIN" gebroadasted.
+
+![grafik](https://user-images.githubusercontent.com/88386040/144747507-0fb799dc-6d41-4aca-8c90-2ea0999cfe66.png)
 
 
 
