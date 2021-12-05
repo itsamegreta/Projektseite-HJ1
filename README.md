@@ -131,6 +131,15 @@ Die Anzeige soll auch vor Spielbeginn und nach einem Gewinn versteckt werden, we
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144746073-aa6ec3e1-a94d-4bf8-921c-05a619783f58.png)
 
+### Game Over 
+
+Damit das "Game Over" erst angezeigt wird, sobald der Dino alle Leben verloren hat, haben wir ein "hide" folgend auf ein "when Flagge clicked" und auf ein "when I receive 'Spielstart'" eingebaut. Damit sie dann jedoch eingebaut wird, haben wir den folgenden Block gebaut, der ab Anfang des Spielstarts gilt. Diseser gilt durch einen "if 'Leben=0'" wirklich nur in dem Moment, in dem alle Leben verloren wurden. Nach 0,1 Sekunden Wartezeit wird das Costume "try" für try again erst auf die richtige Größe und Koordinate gesetzt und dann angezeigt. Daraufhin werden durch den Block "stop all" alle anderen Befehle gestoppt, damit auch keine Meteoriten mehr fallen. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144746905-a73ea843-36a6-4af3-a975-b6eeaf121fba.png)
+
+![grafik](https://user-images.githubusercontent.com/88386040/144746812-5345d755-242b-435c-a4ee-045015b8ed69.png)
+
+Zudem haben wir einen weiteren Block erstellt, der es ermöglichen sollte durch das klicken auf die "Game Over, try again" 
 
 
 
