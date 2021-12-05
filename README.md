@@ -139,7 +139,14 @@ Damit das "Game Over" erst angezeigt wird, sobald der Dino alle Leben verloren h
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144746812-5345d755-242b-435c-a4ee-045015b8ed69.png)
 
-Zudem haben wir einen weiteren Block erstellt, der es ermöglichen sollte durch das klicken auf die "Game Over, try again" 
+Zudem haben wir einen weiteren Block erstellt, der es ermöglichen sollte durch das klicken auf "Game Over, try again" das Spiel erneut zu starten. Dazu haben wir den gleichen Block wie bereits erklärt genutzt, doch das "when I receive Spielstart" durch ein "when I am clicked" und "broadcast Level Beginn" ersetzt. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144747036-8191111b-5776-460c-ab45-96643ab28e28.png)
+
+### Win 
+
+
+
 
 
 
