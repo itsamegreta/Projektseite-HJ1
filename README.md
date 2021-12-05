@@ -8,7 +8,7 @@
 
 [2.   Programm](#2)
 
-[3.   Umsetzung der Idee - KOnzept](#3)
+[3.   Umsetzung der Idee - K0nzept](#3)
 
 [4.   Variablen](#4)
 
@@ -30,7 +30,15 @@
 
 [13.  Stage/Hintergrund](#13)
 
-[14.  Anleitung](#14)
+[14.  Timer](#14)
+
+[15.  Anleitung](#15)
+
+[16.  Stundenblog](#16)
+
+
+
+
 
 
 ## <a name="1"></a> Idee
@@ -41,7 +49,7 @@ Da wir uns beide zuvor nicht mit dem Programmieren beschäftigt haben, haben wir
 
 Dazu haben wir zu Beginn kleinere Projekte ausprobiert, in denen wir die Funktionsweise des Programms testeten. Dabei entstand auch unser erster Spielidee, welche wir, obwohl wir sie zwischendurch in der geplanten Form verworfen hatten, letztendlich doch für unser Spiel genutzt haben. 
 
-## <a name="1"></a> Programm
+## <a name="2"></a> Programm
 
 Nach unserer Recherche und einer Absprache mit Herrn Buhl, haben wir uns für das Programm Snap! entschieden. Da wir weniger Tutorials oder Erklärung als gedacht gefunden haben, haben wir uns auch mit diesen für die Programmiersprache Scratch beschäftigt, da die beiden Sprachen sich stark ähneln. 
 
@@ -124,13 +132,13 @@ Damit die Meteoriten beim Berühren des Bodens des Bodens, sowie bei und vor Spi
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144720169-f0a5c7ab-9484-428b-b9e8-28bb9ba43270.png)
 
-### <a name="7"></a> Boden
+### <a name="8"></a> Boden
 
 Beim Boden handelt es sich um einen von uns gemalten Sprite, bei dem wir lediglich programmieren mussten, dass er auf die Koordinate (0/-150) gesetzt wurde, und, dass er durch die Blockkombinationen "when I receive 'Level Beginn'", "show" und "when I receive 'WIN'", "hide" zum richtigen Zeitpunkt ein- oder ausgeblendet wird. 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144720386-80fb0851-0aa1-4b3a-a664-9f893b9374ed.png)
 
-### <a name="8"></a>Startbutton
+### <a name="9"></a>Startbutton
 
 Der Startbutton soll das gesamte Spiel starten, sobald er angeklickt wird. Deshalb soll er angezeigt werden, sobald die grüne Flagge gedrückt wird, weshalb ein "when Flagge clicked" Block in Verbindung mit einem "show" Block verwendet wird. Die Größe haben wir durch den Block "set size to 55%" angepasst und ihn durch den Block "go to x:0 y:0" in die Mitte des Bildschirms gesetzt. 
 
@@ -140,7 +148,7 @@ Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144744649-8e86f3ef-60e7-462e-b6f6-0d882beee009.png)
 
-### <a name="9"></a> Leben 
+### <a name="10"></a> Leben 
 
 Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gesetzt, indem wir den Block "when I receive 'Level Beginn'" mit dem Variablen-Block "set 'Leben' to 3" kombiniert haben. Um die Lage der Leben auf dem Bildschirm festzulegen, haben wir die Anzeige durch den Block "set size to 30%" auf eine geeignete Größe gesetzt und durch "go to x:-170 y:150" an eine geeignete Stelle des Bildschirms positioniert. 
 
@@ -162,7 +170,7 @@ Die Anzeige soll auch vor Spielbeginn und nach einem Gewinn versteckt werden, we
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144746073-aa6ec3e1-a94d-4bf8-921c-05a619783f58.png)
 
-### <a name="10"></a> Game Over 
+### <a name="11"></a> Game Over 
 
 Damit das "Game Over" erst angezeigt wird, sobald der Dino alle Leben verloren hat, haben wir ein "hide" folgend auf ein "when Flagge clicked" und auf ein "when I receive 'Spielstart'" eingebaut. Damit sie dann jedoch eingebaut wird, haben wir den folgenden Block gebaut, der ab Anfang des Spielstarts gilt. Dieser gilt durch einen "if 'Leben=0'" wirklich nur in dem Moment, in dem alle Leben verloren wurden. Nach 0,1 Sekunden Wartezeit wird das Costume "try" für try again erst auf die richtige Größe und Koordinate gesetzt und dann angezeigt. Daraufhin werden durch den Block "stop all" alle anderen Befehle gestoppt, damit auch keine Meteoriten mehr fallen. 
 
@@ -174,7 +182,7 @@ Zudem haben wir einen weiteren Block erstellt, der es ermöglichen sollte durch 
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747036-8191111b-5776-460c-ab45-96643ab28e28.png)
 
-### <a name="11"></a> Win 
+### <a name="12"></a> Win 
 
 Das Spiel gewinnen kann man indem man 45 Sekunden des Spieles überlebt, ohne von Meteoriten getroffen zu werden. Der ablaufende Timer wird später im Blog genauer erläutert.
 
@@ -188,7 +196,7 @@ Sobald "WIN" gebroadcastet wird, wird auch der Boden versteckt, weshalb sich fol
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747304-85dbac96-032a-4682-ba95-25201fba795d.png)
 
-### <a name="12"></a> Stage/Hintergrund
+### <a name="13"></a> Stage/Hintergrund
 
 Um einen passenden Hintergrund zu gestalten, haben wir uns auf einen graublauen Wolkenhimmel geeinigt. Diesen haben wir als png hochgeladen. 
 
@@ -198,7 +206,7 @@ Auf der Stage befinden sich außerdem zwei Befehle: Dass beim Klicken der grüne
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144748029-e7a7ae30-69d3-4461-a248-ba9080cb10da.png)
 
-### <a name="13"></a> Timer
+### <a name="14"></a> Timer
 
 Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine Begrenzung der Spieldauer auf 45 Sekunden. Um diese zu erstellen haben wir wie bereits erklärt eine neue Variable "Timer" erstellt, welcher beginnt abzulaufen, sobald der Startbutton gedrückt wird. Die Variable, die zu Beginn auf 45 steht, wird durch die Blöcke "wait 1 secs" und "change 'Timer' by -1" sekundenweise geringer. Sobald der Timer abgelaufen ist, also die Variable auf 0 gesetzt wird, wird "WIN" gebroadastet.
 
