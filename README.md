@@ -217,7 +217,14 @@ Um dem Spiel ein Ziel zu geben, welches der Spieler erreichen muss, gibt es eine
 
 Um zu Beginn des Spieles die Aufgabe des Spielers zu erklären, spricht der Startbutton und erklärt alles. Dazu wird der Befehl "when I receive 'Spielstart'" mit dem Befehl "say 'Dodge the meteorites! Use your arrow keys to run and try to survive the apocalypse'" kombiniert und verschwindet wie der Startbutton, wenn man ihn anklickt und das Spiel beginnt.
 
+![grafik](https://user-images.githubusercontent.com/88386040/144750751-74b71c51-f149-4215-8c12-edfd7e923c21.png)
 
+
+### <a name="15"></a> Stundenblog
+
+Der Link zu unserem Stundenblog des ersten Projektes:
+
+https://snap.berkeley.edu/project?user=itsamegreta&project=Informatik%20Projekt%201
 
 
 
