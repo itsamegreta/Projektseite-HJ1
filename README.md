@@ -111,7 +111,30 @@ Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können
 
 ### Leben 
 
-Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gese
+Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getroffen werden. Dafür haben wir die Variable "Leben" erstellt und auf drei gesesetzt, indem wir den Block "when I receive 'Level Beginn'" mit dem Variablen-Block "set 'Leben' to 3" kombiniert haben. Um die Lage der Leben auf dem Bildschirm festzulegen, haben wir die Anzeige durch den Block "set size to 30%" auf eine geeignete Fröße gesetzt und durch "go to x:-170 y:150" an eine geeignete Stelle des Bildschirms positioniert. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144745462-ffcbc09f-6e0c-4564-9399-ca739f0f90fa.png)
+
+Damit auch wirklich Leben abgezogen werden, befindet sich beim Spite "Meteorit" ein Block, durch den der Variable "Leben" ein Herz abgezogen wird, sobald der Dino von einem Meteoriten getroffen wird. Dazu benötigten wir die Blöcke "wait until 'touching Dino'" und "change 'Leben' by -1"
+
+![grafik](https://user-images.githubusercontent.com/88386040/144745586-9219207e-20d9-46be-83e6-3d9e0e16d730.png)
+
+Damit wir eine funktionierende Lebensanzeige haben, mussten wir zuerst vier verschiedene Costumes erstellen. Wir brauchten nämlich je ein Costume für null bis drei Herzen:
+
+![grafik](https://user-images.githubusercontent.com/88386040/144745787-acafd8b9-e689-41de-9119-eae826f3808b.png)
+
+Damit die Anzeige bzw. die Kostüme auch wirklich mit der Variable geändert werden, haben wir in einer "forever"-Klammer jeweils ein "if 'Leben=x'" mit einem "switch to costume x" kombiniert. In dem Moment, in dem die Variable "Leben" auf null gesetzt wird, wird zum Einen das Kostüm geändert und zum Anderen "Game Over" gebroadcasted, da das Spiel in dem Moment als verloren gilt. 
+
+![grafik](https://user-images.githubusercontent.com/88386040/144746019-f089ae7d-07c6-4f38-abb3-a9386e4ad837.png)
+
+Die Anzeige soll auch vor Spielbeginn und nach einem Gewinn versteckt werden, welches durch folgende Blöcke gewährleistet wird:
+
+![grafik](https://user-images.githubusercontent.com/88386040/144746073-aa6ec3e1-a94d-4bf8-921c-05a619783f58.png)
+
+
+
+
+
 
 
 
