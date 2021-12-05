@@ -151,11 +151,14 @@ Das Spiel gewinnen kann man indem man 45 Sekunden des Spieles überlebt, ohne vo
 
 Wenn das Spiel beginnt wird das Costume mittig positioniert, die Größe agepasst und es wird versteckt. Auch wenn die grüne Flagge gedrückt wird ist es versteckt, denn es soll erst angezeigt werden, wenn "WIN" received wird und der Dino noch Leben hat. 
 
+Genau wie beim "Game Over" kann es angeklickt werden um das Spiel erneut zu starten und den Timer zurückzusetzen. Der Block ist hierbei genau so aufgebaut und funktioniert somit auch auf die gleiche Weise.
+
 ![grafik](https://user-images.githubusercontent.com/88386040/144747659-208fa8b0-7b39-4797-b5e3-79dc066f9eb1.png)
 
 Sobald "WIN" gebroadcasted wird, wird auch der Boden versteckt, weshalb sich folgender "Gewinnbildschirm" ergibt:
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144747304-85dbac96-032a-4682-ba95-25201fba795d.png)
+
 
 
 
