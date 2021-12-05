@@ -1,8 +1,21 @@
 # Projektseite-HJ1
 
+## *Inhaltsverzeichnis*
+
+[1.   Idee](#1)
+
+[2.   Programm](#2)
+
+[3.   Umsetzung der Idee - Konzept](#3)
+
+[3.1.   Variablen](#3.1.)
+
+
+
+
 <img width="532" alt="Bildschirmfoto 2021-12-04 um 11 29 42" src="https://user-images.githubusercontent.com/88386040/144706263-437e5ceb-0f88-4b66-bc5f-2f171d7e6b44.png">
 
-## Idee
+## <a name="1"></a> Idee
 
 Unsere Informatikaufgabe für das erste Jahr war es, uns mit der Technik des Programmierens auseineinanderzusetzen und ein Spiel oder Ähnliches zu programmieren.
 
@@ -10,7 +23,7 @@ Da wir uns beide zuvor nicht mit dem Programmieren beschäftigt haben, haben wir
 
 Dazu haben wir zu Beginn kleinere Projekte ausprobiert, in denen wir die Funktionsweise des Programms testeten. Dabei entstand auch unser erster Spielidee, welche wir, obwohl wir sie zwischendurch in der geplanten Form verworfen hatten, letztendlich doch für unser Spiel genutzt haben. 
 
-## Programm
+## <a name="1"></a> Programm
 
 Nach unserer Recherche und einer Absprache mit Herrn Buhl, haben wir uns für das Programm Snap! entschieden. Da wir weniger Tutorials oder Erklärung als gedacht gefunden haben, haben wir uns auch mit diesen für die Programmiersprache Scratch beschäftigt, da die beiden Sprachen sich stark ähneln. 
 
@@ -22,9 +35,9 @@ Die vorhandenen Blöcke lassen sich in acht Kategorien gliedern, aus denen man p
 
 <img width="222" alt="Bildschirmfoto 2021-12-04 um 11 15 16" src="https://user-images.githubusercontent.com/88386040/144705791-24b77671-7245-4d26-8e3c-4eecceb82a3a.png">
 
-## Umsetzung der Idee - Konzept
+## <a name="3"></a> Umsetzung der Idee - Konzept
 
-### Variablen 
+### <a name="3.1"></a> Variablen 
 
 Damit unser Spiel funktionieren kann wie es soll, haben wir zwei Variablen erstellt.
 
