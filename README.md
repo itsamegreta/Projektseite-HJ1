@@ -99,7 +99,7 @@ Beim Boden handelt es sich um einen von uns gemalten Spite, bei dem wir jediglic
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144720386-80fb0851-0aa1-4b3a-a664-9f893b9374ed.png)
 
-### Start
+### Startbutton
 
 Der Startbutton soll das gesammte Spiel starten, sobald er angegeklickt wird. Deshalb soll er angezeigt werden, sobald die grüne Flagge gedrückt wird, weshalb ein "when Flagge clicked" Block in Verbindung mit einem "show" Block verwendet wird. Die Größe haben wir durch den Block "set size to 55%" angepasst und ihn durch den Block "go to x:0 y:0" in die Mitte des Bildschirms gesetzt. 
 
@@ -108,6 +108,10 @@ Der Startbutton soll das gesammte Spiel starten, sobald er angegeklickt wird. De
 Damit die weiteren für das Spiel benötigten Befehle ausgeführt werden können und der Button funktioniert, muss "Level Beginn" gebroadcasted werden sobald er angeglickt wird und. Dazu haben wir die Blöcke "when I am 'clicked'" und "broadcast 'Level Beginn'" kombiniert. Damit der Startbutton gedrückt wurde und das Spiel beginnt, sollte der Button zudem nicht mehr zu sehen sein, weshalb wir einen "hide"-Block eingebaut haben.
 
 ![grafik](https://user-images.githubusercontent.com/88386040/144744649-8e86f3ef-60e7-462e-b6f6-0d882beee009.png)
+
+### Leben 
+
+Unsere Spielfigur sollte drei Leben haben, damit das Spiel nicht sofort endet, sollte der Dino von einem Meteorit getrffen weren.
 
 
 
